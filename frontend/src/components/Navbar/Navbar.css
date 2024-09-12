@@ -1,0 +1,91 @@
+/* src/components/Navbar.css */
+nav {
+  display: flex;
+  flex-direction: column;
+  font-family: "Kaisei Decol", sans-serif;
+  font-size: 0.8rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navigation-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-right: 28px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+}
+
+.logo {
+  margin-left: 10px;
+  letter-spacing: 0.2em;
+}
+
+.items-container {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.items {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  margin: 0 10px;
+}
+
+.items a {
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  padding: 0.5rem;
+}
+
+.lang-btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.lang-btn-container button {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lang-btn-container button:hover {
+  text-decoration: underline;
+}
+
+.lang-btn-container button.active {
+  background-color: black;
+  color: white;
+}
+
+.lang-btn-container span {
+  margin: 0 5px;
+}
+
+.en .items a {
+  letter-spacing: 0.3em;
+}
